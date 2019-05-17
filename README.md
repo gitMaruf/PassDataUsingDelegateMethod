@@ -132,7 +132,7 @@ class SecondViewController: UIViewController {
 ![2nd viewController](Documentation/2.png)
 
 Run your project & you will get the result like this 
-![Tutorial](Documentation/cover.gif)
+
 
 
 
