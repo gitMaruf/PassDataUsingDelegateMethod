@@ -30,7 +30,37 @@ Select 2nd storyboard, add SecondViewController class from identity inspector
 Control + Drag Button from 1st VC to 2nd VC & select show, its create a segue in between
 1st to 2nd VC
 
-Go to ViewController, add those following line of code over there
+![Final View](Documentation/0.png)
+
+Now create 4 outlet for 4 elements in 1s VC
+```swift
+  @IBOutlet weak var textFeildOne: UITextField!
+
+    @IBOutlet weak var labelOne: UILabel!
+
+@IBAction func btnPressedToSendData(_ sender: Any) {   
+    }
+
+ @IBAction func btnPressToChangeColor(_ sender: Any) {
+    }
+
+```
+
+Create 3 outlet for 3 elements in 2nd VC
+
+```swift
+  @IBOutlet weak var labelTwo: UILabel!
+
+    @IBOutlet weak var textFeildTwo: UITextField!
+
+@IBAction func btnPressToGetBack(_ sender: Any) {
+       
+    }
+
+```
+
+
+Go to 1st ViewController.swift, add those following line of code over there
 
 ```swift
 
@@ -67,7 +97,10 @@ class ViewController: UIViewController, canReceive {
     }
 }
 ```
-Go to SecondViewController, add those following line of code over there
+![1st viewController](Documentation/1.png)
+
+
+Go to SecondViewController.swift, add those following line of code over there
 
 ```swift
 import UIKit
@@ -95,6 +128,9 @@ class SecondViewController: UIViewController {
 }
 
 ```
+
+![2nd viewController](Documentation/2.png)
+
 Run your project & you will get the result like this 
 ![Tutorial](Documentation/cover.gif)
 
